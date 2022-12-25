@@ -65,16 +65,18 @@ hr {
 }
 .inputBoxes {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 25px;
 
   background-color: #1f2937;
 }
-input {
+#firstPw,
+#secondPw {
   background: white;
   width: 211px;
   height: 39px;
   font-size: 25px;
   background: #273549;
   border-radius: 6px;
+  color: white;
 }
