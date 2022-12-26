@@ -2,9 +2,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
-const buttons = document.getElementById("#passwordGenerator")
-const firstPw = document.getElementById("#firstPw")
-const secondPw = document.getElementById("#secondPw")
+let btn = document.getElementById("passwordGenerator")
+const firstPw = document.getElementById("firstPw")
+const secondPw = document.getElementById("secondPw")
 let output = ''
 
 const newArray = []
@@ -25,3 +25,7 @@ function Password(){
         document.getElementById('secondPw').innerHTML += `${e}`;
     });
 };
+
+btn.addEventListener('click', () => {
+    console.log("test")
+})
