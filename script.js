@@ -2,30 +2,25 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
-let btn = document.getElementById("passwordGenerator")
+const btn = document.getElementById("passwordGenerator")
 const firstPw = document.getElementById("firstPw")
 const secondPw = document.getElementById("secondPw")
-let output = ''
+
 
 const newArray = []
 
 for (let i = 0; i < 15; i++){
     const randomIndex = Math.floor(Math.random() * characters.length)
-    
     newArray.push(characters[randomIndex])
 }
 console.log(newArray)
 
 
-function Password(){
-    newArray.forEach(e => {
-        document.getElementById('firstPw').innerHTML += `${e}`;
-    });
-    newArray.forEach(e => {
-        document.getElementById('secondPw').innerHTML += `${e}`;
-    });
-};
-
-btn.addEventListener('click', () => {
-    console.log("test")
-})
+    btn.addEventListener("click", function() {
+        newArray.forEach(e => {
+            document.getElementById('firstPw').innerHTML += `${e}`;
+        });
+        newArray.forEach(e => {
+            document.getElementById('secondPw').innerHTML += `${e}`;
+        });
+    })
